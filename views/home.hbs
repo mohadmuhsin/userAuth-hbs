@@ -1,0 +1,47 @@
+ 
+
+<div class="main" style="height: 60px;width: 100vw;">
+    <div class="container-fluid" id="login">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-light bg-light justify-content-between">
+                    <a class="navbar-brand">mobiles</a>
+                    <form action="logout" class="form-inline">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Signout</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        {{#each mobilephones }}
+
+        <div class="col-md-6 col-lg-4 col-12 mt-5">
+            <div class="card">
+
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="{{this.image}}" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{this.cardtitle}}</h5>
+                    <p class="card-text">{{this.cardtext}}</p>
+                    <a href="#!" class="btn btn-primary">Add To Cart</a>
+
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+</div>
+
+
+
+ 
